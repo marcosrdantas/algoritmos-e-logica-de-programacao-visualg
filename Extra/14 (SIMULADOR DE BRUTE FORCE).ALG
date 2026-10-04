@@ -4,7 +4,7 @@ var
 senhaSecreta, tentativas, senhaTentada: inteiro
 
 inicio
-senhaSecreta <- randi(100)
+senhaSecreta <- randi(101)
 
 tentativas <- 7
 
@@ -18,12 +18,12 @@ leia(senhaTentada)
 escreval()
 
 se senhaTentada > senhaSecreta entao
-   escreval("SENHA INCORRETA, A SENHA SECRETA É MENOR QUE O VALOR DIGITADO")
+   escreval("SENHA INCORRETA, A SENHA SECRETA Ã‰ MENOR QUE O VALOR DIGITADO")
    escreval()
    tentativas <- tentativas - 1
 senao
      se senhaTentada < senhaSecreta entao
-        escreval("SENHA INCORRETA, A SENHA SECRETA É MAIOR QUE O VALOR DIGITADO")
+        escreval("SENHA INCORRETA, A SENHA SECRETA Ã‰ MAIOR QUE O VALOR DIGITADO")
         escreval()
         tentativas <- tentativas - 1
      senao
