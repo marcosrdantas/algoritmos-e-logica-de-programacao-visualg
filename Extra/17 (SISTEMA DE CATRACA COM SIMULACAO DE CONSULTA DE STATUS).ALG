@@ -2,10 +2,12 @@ algoritmo "Primeiro Programa"
 
 var
 matricula, sorteioPlano, sorteioPagamento, liberados, barrados: inteiro
-faturamento: real
+faturamento, precoPlanoBasico, precoPlanoFamilia: real
 plano, statusPagamento: caracter
 
 inicio
+precoPlanoBasico <- 120
+precoPlanoFamilia <- 180
  
 repita
 
@@ -34,10 +36,10 @@ repita
     se statusPagamento = "P" entao
 
       se plano = "B" entao
-        faturamento <- faturamento + 120
+        faturamento <- faturamento + precoPlanoBasico
       senao
         se plano = "F" entao
-          faturamento <- faturamento + 180
+          faturamento <- faturamento + precoPlanoFamilia
         fimse
       fimse 
       
